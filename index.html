@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Button Example</title>
-    <style>
-      .my-button {
-        background-color: blue;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-    </style>
-  </head>
-  <body>
-    <button onclick="document.getElementById('myImage').src='img_bulbon.gif'">Turn on the light</button>
+<body>
 
-<img id="myImage" src="img_bulboff.gif" style="width:100px">
+<h2>My First JavaScript</h2>
 
-<button onclick="document.getElementById('myImage').src='img_bulboff.gif'">Turn off the light</button>
-        }
-      }
-    </script>
-  </body>
-</html>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+</body>
+</html> 
