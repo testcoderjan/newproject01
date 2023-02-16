@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Interactive Webpage</title>
+	<title>My Simple and Colorful Webpage</title>
 	<style>
-		#box {
-			width: 100px;
-			height: 100px;
-			background-color: blue;
-			position: relative;
-			left: 0;
-			transition: left 1s;
+		body {
+			background-color: #f8e9a1;
+			color: #383838;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			font-size: 3rem;
+			text-align: center;
+			margin-top: 3rem;
+			color: #d9715d;
+		}
+
+		p {
+			font-size: 1.5rem;
+			line-height: 2rem;
+			margin: 2rem;
+			text-align: center;
+		}
+
+		.button {
+			display: inline-block;
+			padding: 1rem 2rem;
+			background-color: #d9715d;
+			color: #fff;
+			border-radius: 2rem;
+			text-decoration: none;
+			font-size: 1.5rem;
+			margin: 2rem;
+			transition: all 0.3s ease;
+		}
+
+		.button:hover {
+			background-color: #f79489;
+			color: #fff;
+			transform: scale(1.1);
+			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 		}
 	</style>
 </head>
 <body>
-	<h1>My Interactive Webpage</h1>
-	<p>Click the button to move the box to the right.</p>
-	<button onclick="moveBox()">Move Box</button>
-	<div id="box"></div>
+	<h1>Welcome to My Simple and Colorful Webpage!</h1>
+	<p>This is a demo page to showcase some basic HTML, CSS, and Javascript skills. Feel free to look around and click the button below to learn more.</p>
+	<a href="#" class="button">Learn More</a>
 	<script>
-		function moveBox() {
-			var box = document.getElementById("box");
-			var currentLeft = parseInt(box.style.left);
-			box.style.left = (currentLeft + 100) + "px";
-		}
+		document.querySelector('.button').addEventListener('click', () => {
+			alert('Thanks for visiting my webpage!');
+		});
 	</script>
 </body>
 </html>
-
